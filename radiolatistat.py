@@ -25,7 +25,6 @@ import os
 import sys
 import math
 import json
-import time
 import httplib2
 from urlparse import urlparse
 
