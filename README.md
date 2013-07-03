@@ -2,7 +2,7 @@ radiolatistat
 =============
 
 ### About
-The Radio Thermostat Google Latitude Tracker keeps track of multiple Google Latitude users and as soon as any of them are within the configurable range, settings the Radio Thermostat temperature to the home setting.  If no users are within range, it will set the thermostat to the away setting.
+The Radio Thermostat Google Latitude Tracker keeps track of multiple Google Latitude users and as soon as any of them are within the configurable range, sets the Radio Thermostat temperature to the home setting.  If no users are within range, it will set the thermostat to the away setting.
 
 ### Requirements
 In order for the script to run, you will need the following:
