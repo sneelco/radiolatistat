@@ -2,7 +2,7 @@ radiolatistat
 =============
 
 ### About
-The Radio Thermostat Google Latitude Tracker keeps track of multiple Google Latitude users and as soon as any of them are within the configurable range, settings the Radio Thermostat temperature to the home setting.  If no users are within range, it will set the thermostat to the away setting.
+The Radio Thermostat Google Latitude Tracker keeps track of multiple Google Latitude users and as soon as any of them are within the configurable range, sets the Radio Thermostat temperature to the home setting.  If no users are within range, it will set the thermostat to the away setting.
 
 ### Requirements
 In order for the script to run, you will need the following:
@@ -38,7 +38,7 @@ EOF
 Once the configuration file is complete, run the script. It prompts you to log out of google in your browser.  This is needed in case the latitude user you are trying to authenticate is not the user you have currently logged in your browsers session.  Once you hit enter, your browser will open up.  Login to google and accept the prompt, giving the script access to latitude.  At this point, you may cron the script to run on a schedule.
 
 ### Todo
-This is just an initial pass and a lot can still be done, mostly from a cleanup perspective:
+This is just an initial pass and a lot can still be done:
 * Add setup process to generate the config
 * Ability to get long/lat based on an address
 * Move from cron to a service
