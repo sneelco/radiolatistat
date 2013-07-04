@@ -115,7 +115,7 @@ def get_distances(users, client_id, client_secret, api_key, home_long, home_lat,
     if VERBOSE:
       print "INFO: Getting location for %s" % user 
     service = build('latitude', 'v1', developerKey=api_key, http=http)
-    phone = service.currentLocation().get().execute()
+    phone = service.currentLocation().get(granularity='best').execute()
 
     #Look for valid data and get distance from home
     if 'latitude' in phone and 'longitude' in phone:
@@ -234,9 +234,9 @@ users = get_distances(
 for user in users:
   if users[user] < config['min_range']:
     inrange = True
-    log("%s in range" % user)
+    log("%s in range: %0.1f mi" % (user, users[user]))
   else:
-    log("%s out of range: %d mi" % (user, users[user]))
+    log("%s out of range: %0.1f mi" % (user, users[user]))
 
 #
 # Setup our Radio Thermostat resouce
